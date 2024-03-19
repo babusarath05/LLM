@@ -1,0 +1,22 @@
+For Whisper AI
+
+##Installation
+#Package Pytorch for CPU
+pip install torch torchvision torchaudio
+#Chocolatey package manager & FFMPEG(Using Power shell-Admin access)
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+choco upgrade ffmpeg -y
+
+#Package OpenAI
+pip install -U openai-whisper
+
+
+##Code Changes
+
+recognizer.recognize_whisper(audio,language="english",model="tiny")
+
+
+##Link to the yt video of 1 click whisper installer
+https://www.youtube.com/watch?v=R5pZPpIIUzA
+https://tc.ht/PowerShell/AI/whisper.ps1
